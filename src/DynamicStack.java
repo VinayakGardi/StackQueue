@@ -8,7 +8,7 @@ public class DynamicStack extends CustomStack {
     }
 
     @Override
-    public boolean add(int item) throws StackException{
+    public boolean add(int item) throws CustomException {
         if(this.isFull()){
             int[] temp = new int[data.length*2];
             for(int i=0;i<data.length;i++){

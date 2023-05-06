@@ -1,5 +1,5 @@
 public class StackMain {
-    public static void main(String[] args) throws StackException {
+    public static void main(String[] args) throws CustomException {
 //        CustomSTack cs = new CustomSTack();
 //        cs.add(23);
 //        cs.add(35);

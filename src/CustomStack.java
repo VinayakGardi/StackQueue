@@ -1,4 +1,4 @@
-public class CustomStack {
+public class CustomStack  {
     protected int[] data;
     private static final int DEFAULT_SIZE=10;
     int ptr = -1;
@@ -9,9 +9,9 @@ public class CustomStack {
          this.data = new int[size];
     }
 
-    public boolean add(int item) throws StackException{
+    public boolean add(int item) throws CustomException {
         if(isFull()){
-            throw new StackException("Stack is full cannot be added");
+            throw new CustomException("Stack is full cannot be added");
 
         }
          ptr++;
@@ -27,16 +27,16 @@ public class CustomStack {
         return ptr == -1;
     }
 
-    public int remove() throws StackException{
+    public int remove() throws CustomException {
         if(isEmpty()){
-            throw new StackException("Cannot delete from the empty stack");
+            throw new CustomException("Cannot delete from the empty stack");
         }
         return data[ptr--];
     }
 
-    public int peek() throws StackException{
+    public int peek() throws CustomException {
         if(isEmpty()){
-            throw new StackException("Cannot peek from an empty stack ");
+            throw new CustomException("Cannot peek from an empty stack ");
         }
         return data[ptr];
     }
