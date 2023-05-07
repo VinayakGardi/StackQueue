@@ -1,4 +1,4 @@
-public class CustomQueue {
+public abstract class CustomQueue {
     public int[] data;
     public static final int DEFAULT_SIZE =10;
     int end = 0;
@@ -55,10 +55,11 @@ public class CustomQueue {
 
     public void display(){
         for(int i=end-1;i>=0;i--){
-            System.out.print(data[i]+" ");
+            System.out.print(data[i]+" -> ");
         }
         System.out.println();
     }
 
 
+    public abstract boolean add(int item) throws CustomException;
 }

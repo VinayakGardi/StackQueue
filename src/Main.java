@@ -22,16 +22,21 @@ public class Main {
         stack.pop();
         System.out.println(stack);
 
+
         Queue<Integer> queue = new LinkedList<>();
         queue.add(23);
         queue.add(2153);
         queue.add(5123);
         queue.add(2335);
         System.out.println(queue);
+        System.out.println(queue.poll());
+        System.out.println(queue);
         System.out.println(queue.size());
         for(int i=0;i<4;i++){
             queue.remove();
         }
+
+
         System.out.println(queue.size());
 
         System.out.println(queue);
