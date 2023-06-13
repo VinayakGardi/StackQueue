@@ -18,18 +18,19 @@ public class StackMain {
 
 
 
-        DynamicStack ds = new DynamicStack(5);
-        ds.add(233);
-        ds.add(842);
-        ds.add(35);
-        ds.add(26);
-        ds.add(2313);
-
-        System.out.println(ds.peek());
-        System.out.println(ds.data.length);
-        ds.add(4123);
-        System.out.println(ds.peek());
-        System.out.println(ds.data.length);
+//        DynamicStack ds = new DynamicStack(5);
+//        ds.add(233);
+//        ds.add(842);
+//        ds.add(35);
+//        ds.add(26);
+//        ds.add(2313);
+//        ds
+//
+//        System.out.println(ds.peek());
+//        System.out.println(ds.data.length);
+//        ds.add(4123);
+//        System.out.println(ds.peek());
+//        System.out.println(ds.data.length);
 
 
 

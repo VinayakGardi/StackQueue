@@ -9,7 +9,8 @@ public class Main {
 
         Stack<Integer> stack = new Stack<>();
         stack.push(34);
-        stack.push(452);
+        stack.push( 452);
+        stack.peek();
 
         stack.push(632);
 
